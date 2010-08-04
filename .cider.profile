@@ -7,6 +7,8 @@ alias spec="spec -c"
 alias grep="grep --color"
 alias gar="git add -A; git ls-files --deleted -z | xargs -0 git rm "
 
+alias ci='vi'
+
 PATH="/Users/jasonnochlin/Developer/bin:$PATH"; export PATH
 MANPATH="/Users/jasonnochlin/Developer/share/man:$MANPATH"; export MANPATH
 
