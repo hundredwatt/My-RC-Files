@@ -1,0 +1,6 @@
+defscrollback 2048
+hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+startup_message off
+altscreen on
+maxwin 6
+

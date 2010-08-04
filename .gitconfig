@@ -1,0 +1,7 @@
+[user]
+	name = Jason Nochlin
+	email = hundredwatt@gmail.com
+[alias]
+	co = checkout
+	cb = checkout -b
+	cm = commit
