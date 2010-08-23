@@ -6,6 +6,7 @@ alias spec="spec -c"
 
 alias grep="grep --color"
 alias gar="git add -A; git ls-files --deleted -z | xargs -0 git rm "
+alias ops="open -a Adobe\ Photoshop\ CS5"
 
 alias ci='vi'
 
