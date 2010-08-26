@@ -9,6 +9,7 @@ alias gar="git add -A; git ls-files --deleted -z | xargs -0 git rm "
 alias ops="open -a Adobe\ Photoshop\ CS5"
 
 alias ci='vi'
+alias sbcl='rlwrap sbcl'
 
 PATH="/Users/jasonnochlin/Developer/bin:$PATH"; export PATH
 MANPATH="/Users/jasonnochlin/Developer/share/man:$MANPATH"; export MANPATH

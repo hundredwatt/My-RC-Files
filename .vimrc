@@ -25,3 +25,15 @@ if &term == "screen" || &term == "xterm"
 	set title
 endif
 let &titleold=" "
+
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>   
+
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+imap <up> <nop> 
+
+nnoremap <Space> :
