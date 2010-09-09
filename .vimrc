@@ -26,6 +26,9 @@ if &term == "screen" || &term == "xterm"
 endif
 let &titleold=" "
 
+map <F7> :set spell!
+map <F9> :noh
+
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
