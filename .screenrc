@@ -3,4 +3,5 @@ hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
 startup_message off
 altscreen on
 maxwin 6
-
+escape ^A^A
+bind o other

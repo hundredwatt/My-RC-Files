@@ -1,0 +1,44 @@
+alias gs="git status"
+alias gx="gitx --all"
+alias be="bundle exec"
+alias grep="grep --color"
+alias gl="git log --decorate --oneline --color -n"
+alias xx="exit"
+alias screen="screen -s /bin/bash"
+alias mdkir="mkdir"
+alias remove_qmarks='find . | grep '?' | perl -pe "s/^((.*)[?].*)$/mv \1 \2/" | sh'
+alias trim_whitesspace='
+  for FILE in `exec git diff-index --check --cached HEAD -- | sed '/^[+-]/d' | cut -d ':' -f 1 | uniq` ; do
+     # Fix them!
+     echo $FILE
+     (sed -i 's/[[:space:]]*$//' "$FILE" > /dev/null 2>&1 || sed -i "" 's/[[:space:]]*$//' "$FILE")
+
+  done
+'
+
+
+alias gar="git add -A; git ls-files --deleted -z | xargs -0 git rm "
+alias gr="git ls-files --deleted -z | xargs -0 git rm "
+alias ops="open -a Adobe\ Photoshop\ CS5"
+alias sbcl="rlwrap sbcl"
+
+alias ops="open -a Adobe\ Photoshop\ CS5"
+alias sbcl="rlwrap sbcl"
+
+export PATH=/usr/local/texlive/2009/bin/universal-darwin:$PATH
+
+export CLICOLOR=1
+# use yellow for directoriesexport LSCOLORS=dxfxcxdxbxegedabagacad
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+shopt -s histappend
+
+mcd() { mkdir -p "${@}" && cd "${1}"; }
+
+eval "$(/Users/jason/Current/gag/bin/gag init -)"
+
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
+export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
+export EC2_HOME="/Users/jason/Developer/Library/LinkedKegs/ec2-api-tools/jars"
+export SSL_CERT_FILE=/opt/local/share/curl/curl-ca-bundle.crt
